@@ -64,13 +64,7 @@ function draw() {
   	drawSprites();
  
 }
-function keyPressed(){
-	
-        if(keyCode === UP_ARROW){
-        Matter.Body.applyForce(ball,{x:ball.position.x,y:ball.position.y}, {x:0.05,y:-0.05});
 
-        }
-         }
 
 function mousePressed(){
 
