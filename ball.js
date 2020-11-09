@@ -42,5 +42,4 @@ class Ball{
             image(this.image, 0, 0, 77,77);
         pop();
     }
-    
 }
