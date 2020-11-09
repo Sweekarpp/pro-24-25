@@ -18,14 +18,12 @@ class Ball{
        
         function keyPressed(){
 	
-            if(keyCode === UP_ARROW){
-            Matter.Body.applyForce(ball,{x:ball.position.x,y:ball.position.y}, {x:0.05,y:-0.05});
+            if(keyCode === 32){
+            Matter.Body.applyForce(this.body,this.body.position,{x:0.05,y:-0.05});
     
             }
              }   
-        // if (keyWentUp("up")) {
-        //     Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0,y:0});
-        // }
+       
         
         
     }

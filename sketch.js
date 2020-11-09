@@ -57,7 +57,7 @@ function draw() {
 			ground.display();
 		}
 	}
-	for (let ball of balls) {
+	for (let ball of balls){
 		ball.fly();
 	}
 	
@@ -66,9 +66,7 @@ function draw() {
 }
 
 
-function mousePressed(){
 
-}
 
 
 
