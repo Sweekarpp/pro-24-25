@@ -40,7 +40,7 @@ class Ball{
             rotate(angle);
             imageMode(CENTER);
             image(this.image, 0, 0, 77,77);
-            //scale(10);
         pop();
     }
+    
 }
