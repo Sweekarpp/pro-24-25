@@ -16,13 +16,7 @@ class Ball{
     }
     fly(){
        
-        function keyPressed(){
-	
-            if(keyCode === 32){
-            Matter.Body.applyForce(this.body,this.body.position,{x:0.05,y:-0.05});
-    
-            }
-             }   
+           
        
         
         

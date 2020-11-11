@@ -8,7 +8,7 @@ var grounds = [];
 var ground2;
 var ground3;
 var ground4;
-var balls=[];
+
 var bls = [];
 var l = true;
 var imag;
@@ -26,7 +26,7 @@ function setup() {
 	grounds.push(new Ground(width/2,height-17,width + 1000,30));
 	ground2 = new Ground(width-230,height-105,20,125);
 	ground3 = new Ground(width-110,height-105,20,125);
-	balls.push(new Ball(width/15,height/2,20));
+    ball = new Ball(200,200,20);
 
 	
 
@@ -39,12 +39,8 @@ function draw() {
   	background("red");
 	Engine.update(engine);
 
-	// for (var i = 0; i < boxy.length; i++) {
-	// 	boxy[i].show();
-	// }
-	for (let ball of balls) {	
-		ball.display();
-	}
+
+    ball.display();
 	ground3.display();
 	ground2.display();
 	ground4.display();
@@ -57,16 +53,16 @@ function draw() {
 			ground.display();
 		}
 	}
-	for (let ball of balls){
-		ball.fly();
-	}
+	ball.fly();
 	
   	drawSprites();
  
 }
 
-
-
-
-
+function keyPressed() {
+    Matter.Body.applyForce(this.body, this.body.position, {
+		x: 0.5,
+		y: -0.5
+	});
+	}
 
